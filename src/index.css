@@ -1,13 +1,76 @@
+:root {
+  box-sizing: border-box;
+  --bg-color: rgb(16, 149, 189);
+}
+
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* App */
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.App {
+  width: 100%;
+  position: relative;
+}
+
+/* Background Triangle */
+.triangle {
+  position: absolute;
+  background-color: var(--bg-color);
+  width: 100vw;
+  height: 15rem;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.triangle:after {
+  position: absolute;
+  width: 100%;
+  height: 15rem;
+  content: '';
+  background: rgb(16, 149, 189);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transform-origin: top right;
+  transform: skewY(-25deg);
+}
+
+/* Hero Content */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.hero-image {
+  position: relative;
+  height: 40vh;
+  z-index: 2;
+}
+
+.hero-title {
+  position: absolute;
+  top: 18rem;
+  font-size: 2rem;
+  text-align: center;
+  z-index: 6;
 }

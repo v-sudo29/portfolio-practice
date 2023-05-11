@@ -67,8 +67,6 @@ body {
   align-items: center;
   z-index: 2;
   padding: 1rem;
-
-  border: 1px solid red;
 }
 
 .hero-image {
@@ -99,7 +97,6 @@ body {
 /* Main */
 .main {
   text-align: center;
-  border: 1px solid red;
 }
 
 .about-me {
@@ -113,7 +110,6 @@ body {
   font-family: var(--playfair-font);
   font-size: 3.5rem;
   font-weight: 200;
-  border: 1px solid blue;
 }
 
 .about-me-description {
@@ -122,4 +118,20 @@ body {
   text-align: left;
   color: #4e4e4e;
   line-height: 2.2rem;
+}
+
+.social-links-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-logo {
+  height: 3rem;
+  cursor: pointer;
+}
+
+.linkedin {
+  height: 4rem;
 }

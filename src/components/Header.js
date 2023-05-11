@@ -1,6 +1,6 @@
 import HeroDog from '../assets/doctor-doge.jpeg'
 
-export default function Heading() {
+export default function Header() {
   return (
     <header className='hero-content'>
       <img className='hero-image'src={HeroDog} alt="" />

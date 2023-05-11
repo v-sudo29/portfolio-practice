@@ -1,10 +1,10 @@
-import Heading from "./components/Heading";
+import Header from "./components/Header";
 import Main from "./components/Main";
 
 function App() {
   return (
     <div className="App">
-      <Heading />
+      <Header />
       <div className='triangle'></div>
       <Main />
     </div>

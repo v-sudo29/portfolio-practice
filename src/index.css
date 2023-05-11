@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
 :root {
   box-sizing: border-box;
   --bg-color: rgb(16, 149, 189);
+  --playfair-font: 'Playfair Display', serif;
 }
 
 body {
@@ -63,14 +66,22 @@ body {
 
 .hero-image {
   position: relative;
-  height: 40vh;
+  height: 33rem;
+  margin: 2rem 2rem;
   z-index: 2;
 }
 
 .hero-title {
   position: absolute;
-  top: 18rem;
-  font-size: 2rem;
-  text-align: center;
-  z-index: 6;
+  top: 21rem;
+  width: 20rem;
+  font-family: var(--playfair-font);
+  font-size: 4rem;
+  font-weight: 500;
+  color: white;
+  text-shadow: 1px 3px 1px #bdbdbd;
+  text-align: start;
+  z-index: 3;
 }
+
+/* Main */

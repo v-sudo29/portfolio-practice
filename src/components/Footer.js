@@ -14,9 +14,8 @@ export default function Footer() {
             <div>goodboy.junior@gmail.com</div>
           </div>
         </div>
-        <Socials />
+        <Socials class='contact-me-socials' />
       </section>
-      <img className='doge-contact-img' src={DogeContact} alt="" />
-    </footer>
+      <img className='doge-contact-img' src={DogeContact} alt="" />    </footer>
   )
 }

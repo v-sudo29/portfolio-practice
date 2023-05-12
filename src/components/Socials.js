@@ -2,9 +2,9 @@ import GitHubLogo from '../assets/github-logo.svg'
 import LinkedInLogo from '../assets/linkedin-logo.svg'
 import TwitterLogo from '../assets/twitter-logo.svg'
 
-export default function Socials() {
+export default function Socials(props) {
   return (
-    <div className="social-links-div">
+    <div className={`${props.class} social-links-div`}>
         <div>
           <a href="/"><img className='github social-logo' src={GitHubLogo} alt="git-hub-link" /></a>
         </div>

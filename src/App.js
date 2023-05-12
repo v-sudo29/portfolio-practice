@@ -6,10 +6,10 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Main />
       <div className='triangle'></div>
       <div className='triangle-two'></div>
       <div className='triangle-three'></div>
-      <Main />
       <Footer />
     </div>
   );

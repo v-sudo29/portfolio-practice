@@ -46,11 +46,11 @@ h3 {
   position: relative;
 }
 
-/* Background Triangle */
+/* Background Triangles */
 .triangle {
   position: absolute;
   background-color: var(--bg-color);
-  min-width: 0px;
+  min-width: 320px;
   max-width: 100vw;
   height: 18rem;
   top: 0;
@@ -72,7 +72,7 @@ h3 {
   right: 0;
   left: 0;
   transform-origin: top right;
-  transform: skewY(-25deg);
+  transform: skewY(-20deg);
 }
 
 /* Hero Content */
@@ -91,7 +91,7 @@ h3 {
 
 .hero-image {
   max-height: 140vw;
-  min-width: 0rem;
+  min-width: 0vw;
   max-width: 90vw;
 }
 
@@ -247,6 +247,10 @@ h3 {
 }
 
 /* Contact Info */
+.footer {
+  min-width: 320px;
+}
+
 .contact-me {
   display: flex;
   flex-direction: column;
@@ -275,6 +279,7 @@ h3 {
 }
 
 .doge-contact-img {
+  min-width: 320px;
   max-width: 100vw;
 }
 
@@ -358,9 +363,7 @@ h3 {
     background-color: white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     margin-top: 4rem;
-    padding-top: 4rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 4rem 2rem;
     z-index: 5;
   }
 
@@ -404,7 +407,6 @@ h3 {
     align-items: center;
     padding: 2rem;
     background-color: var(--bg-color);
-    border: 1px solid red;
   }
 
   .contact-me {
@@ -435,5 +437,166 @@ h3 {
     flex-direction: column;
     gap: 0.5rem;
     margin-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  /* Background Triangles */
+  .triangle {
+    height: 10rem;
+    z-index: 4;
+  }
+
+  .triangle:after {
+    height: 10rem;
+    z-index: 1;
+  }
+
+  .triangle-two {
+    position: absolute;
+    top: 7rem;
+    width: 10vw;
+    border-bottom: 35vw solid var(--bg-color);
+    z-index: 1;
+  }
+
+  .triangle-three {
+    position: absolute;
+    top: 13rem;
+    left: 0rem;
+    width: 50vw;
+    height: 5vw;
+    border-bottom: 10vw solid var(--bg-color);
+    z-index: 1;
+
+  }
+
+  .triangle-three:after {
+    position: absolute;
+    width: 100%;
+    height: 14vw;
+    content: '';
+    background: rgb(16, 149, 189);
+    box-shadow: 0 5px 4px -4px gray;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: -3px;
+    transform-origin: top right;
+    transform: skewY(-20deg);
+  }
+
+  /* Hero Content */
+  .header-content {
+    display: block;
+    position: relative;
+    padding: 3rem;
+    z-index: 5;
+  }
+
+  .hero-image-container {
+    position: relative;
+    width: 25rem;
+    float: left;
+    top: 1rem;
+    left: 0rem;
+    margin-right: 1rem;
+    z-index: 5;
+  }
+
+  .hero-image {
+    width: inherit;
+  }
+
+  .hero-title-div {
+    display: flex;
+    align-items: flex-end;
+    top: 10rem;
+    width: 20rem;
+    height: 30rem;
+    z-index: 10;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  /* About Me */
+  .about-me {
+    display: block;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    z-index: 5;
+  }
+  
+  .about-me-title {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+  }
+  
+  .about-me-description {
+    font-size: 1.3rem;
+  }
+
+  .social-links-div {
+    justify-content: flex-end;
+    padding-top: 2rem;
+  }
+
+  .social-logo {
+    height: 2rem;
+  }
+
+  .linkedin {
+    height: 3rem;
+  }
+
+  /* My Work */
+  .my-work {
+    padding-top: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  /* Footer */
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: var(--bg-color);
+  }
+
+  .contact-me {
+    text-align: start;
+  }
+
+  .contact-me-title {
+    font-size: 2.5rem;
+  }
+
+  .contact-info > * {
+    font-size: 1rem;
+  }
+
+  .contact-me-socials {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .doge-contact-img {
+    max-width: 30rem;
+    max-height: 30rem;
   }
 }

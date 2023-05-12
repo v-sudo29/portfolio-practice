@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/portfolio-practice/static/css/main.db86a258.css",
+    "main.js": "/portfolio-practice/static/js/main.f93d38e5.js",
+    "static/media/doctor-doge.jpeg": "/portfolio-practice/static/media/doctor-doge.acf8e5f2d9b5a8fda05c.jpeg",
+    "static/media/doge-contact.jpg": "/portfolio-practice/static/media/doge-contact.a55ab9a376de30c54f38.jpg",
+    "static/media/linkedin-logo.svg": "/portfolio-practice/static/media/linkedin-logo.44906b3d6741f28a922941668a2ed244.svg",
+    "static/media/github-logo.svg": "/portfolio-practice/static/media/github-logo.5531be85d7a8d6f333e5c7136944a022.svg",
+    "static/media/twitter-logo.svg": "/portfolio-practice/static/media/twitter-logo.2625f4ba66d7ed81b3051e05d8f8c1a2.svg",
+    "index.html": "/portfolio-practice/index.html",
+    "static/media/external-link.svg": "/portfolio-practice/static/media/external-link.dafafd0393761d22f2e8ccc6f85e5e29.svg",
+    "main.db86a258.css.map": "/portfolio-practice/static/css/main.db86a258.css.map",
+    "main.f93d38e5.js.map": "/portfolio-practice/static/js/main.f93d38e5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db86a258.css",
+    "static/js/main.f93d38e5.js"
+  ]
+}
